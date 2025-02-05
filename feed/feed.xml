@@ -5,11 +5,33 @@
   <subtitle>This is a longer description about your blog.</subtitle>
   <link href="https://example.com/eleventy-base-blog/feed/feed.xml" rel="self" />
   <link href="https://example.com/eleventy-base-blog/" />
-  <updated>2018-09-30T00:00:00Z</updated>
+  <updated>2023-09-15T00:00:00Z</updated>
   <id>https://example.com/eleventy-base-blog/</id>
   <author>
     <name>Your Name</name>
   </author>
+  <entry>
+    <title>Learning</title>
+    <link href="https://example.com/eleventy-base-blog/blog/firstpost/" />
+    <updated>2023-09-15T00:00:00Z</updated>
+    <id>https://example.com/eleventy-base-blog/blog/firstpost/</id>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;https://example.com/eleventy-base-blog/blog/firstpost/#content&quot;&gt;Skip to content&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rishigurnani.wordpress.com/&quot;&gt;Rishi Gurnani&#39;s Website&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;learning&quot;&gt;Learning&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Below are my brief takes on density functional theory and machine learning, accompanied by helpful resources.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;My work leverages computational tools to study porous materials. These tools include &lt;strong&gt;Density Functional Theory (DFT)&lt;/strong&gt; and &lt;strong&gt;Machine Learning (ML)&lt;/strong&gt;. At a high level, DFT allows us to set up several quantum‐mechanical equations. By solving them, we can learn about the electronic properties of a set of atoms with an accuracy that matches experimental measurements. To learn more about DFT, check out &lt;a href=&quot;https://www.youtube.com/channel/UCPtZ0t9Fn2cVETnHqJECW2w&quot;&gt;Rasoul Khaledialidusti&lt;/a&gt;’s four-part &lt;a href=&quot;https://www.youtube.com/playlist?list=PLvZcfmZeLsvrq5kmsBcyFFIozKZR6mJ-s&quot;&gt;series&lt;/a&gt;. A great complement to this series is a &lt;a href=&quot;https://www.youtube.com/playlist?list=PLT-GNiCGT-NRk1nD8fZqZcn0zuCEJ6E0_&quot;&gt;set of lectures&lt;/a&gt; by my PhD advisor, Dr. Ramprasad, on Electronic Structure Theory.&lt;/p&gt;
+&lt;p&gt;In addition to the electronic properties, we sometimes wish to understand a material’s &lt;strong&gt;phononic properties&lt;/strong&gt;—that is, the coordinated movement of its atoms. These are uncovered by obtaining the &lt;em&gt;Dynamical Matrix&lt;/em&gt;. To learn more, I recommend this easy-to-digest &lt;a href=&quot;https://www.neutron-sciences.org/articles/sfn/pdf/2011/01/sfn201112007.pdf&quot;&gt;paper&lt;/a&gt; by M.T. Dove. In short, the Dynamical Matrix reveals how displacing one atom affects the forces on the others. (G J Ackland also wrote a nice review of these methods, available &lt;a href=&quot;https://iopscience.iop.org/article/10.1088/0953-8984/14/11/311/pdf&quot;&gt;here&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;Although DFT is incredibly powerful, it can be slow for systems with many atoms. &lt;strong&gt;Machine Learning (ML)&lt;/strong&gt; offers a speedy alternative. An incredible introduction to ML is available in Andrew Ng’s lecture series &lt;a href=&quot;https://www.youtube.com/watch?v=PPLop4L2eGk&amp;amp;list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN&quot;&gt;here&lt;/a&gt;. In simple terms, ML is a way to approximate &lt;em&gt;maps&lt;/em&gt;—that is, a set of relationships between inputs and outputs. For example, consider the relationship between numbers and letters as shown in the diagram below:&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/eleventy-base-blog/blog/firstpost/B6j746M0hu-240.avif 240w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/eleventy-base-blog/blog/firstpost/B6j746M0hu-240.webp 240w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/eleventy-base-blog/blog/firstpost/B6j746M0hu-240.png&quot; alt=&quot;&quot; width=&quot;240&quot; height=&quot;240&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;There are many flavors of ML algorithms, each uniquely using data to approximate the underlying map. Perhaps the most popular is the &lt;em&gt;neural network&lt;/em&gt;. With just five minutes and a little Python knowledge, you can create your very own neural network using the Keras API. Check out &lt;a href=&quot;https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/&quot;&gt;this tutorial&lt;/a&gt; for a quick start (remember to set up your environment first). While Keras is easy to get started with, more advanced networks (such as Variational Autoencoders) require a deeper dive. Stanford’s free &lt;a href=&quot;http://web.stanford.edu/class/cs20si/syllabus.html&quot;&gt;lectures&lt;/a&gt; on TensorFlow are an excellent resource, and you can also view &lt;a href=&quot;https://www.youtube.com/watch?v=TFWYoZoezrY&quot;&gt;my lecture&lt;/a&gt; on debugging neural networks.&lt;/p&gt;
+&lt;p&gt;Another ML method I frequently use is &lt;em&gt;Gaussian Process Regression (GPR)&lt;/em&gt;. A gentle introduction to GPR is available &lt;a href=&quot;https://towardsdatascience.com/quick-start-to-gaussian-process-regression-36d838810319&quot;&gt;here&lt;/a&gt; (a basic understanding of probability notation helps).&lt;/p&gt;
+&lt;h3 id=&quot;share-this&quot;&gt;Share this:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://rishigurnani.wordpress.com/learning/?share=twitter&quot; title=&quot;Click to share on Twitter&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rishigurnani.wordpress.com/learning/?share=facebook&quot; title=&quot;Click to share on Facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>This is my fourth post</title>
     <link href="https://example.com/eleventy-base-blog/blog/fourthpost/" />
@@ -65,27 +87,6 @@ console.log(&#39;Test&#39;);
 &lt;a href=&quot;https://example.com/eleventy-base-blog/blog/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>This is my first post.</title>
-    <link href="https://example.com/eleventy-base-blog/blog/firstpost/" />
-    <updated>2018-05-01T00:00:00Z</updated>
-    <id>https://example.com/eleventy-base-blog/blog/firstpost/</id>
-    <content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot;&gt;Section Header&lt;/h2&gt;
-&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
-&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;
-&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&quot;token inserted-sign inserted language-js&quot;&gt;&lt;span class=&quot;token prefix inserted&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&quot;token deleted-sign deleted language-js&quot;&gt;&lt;span class=&quot;token prefix deleted&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;  counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;/span&gt;
-&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;
-&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
   </entry>
 </feed>

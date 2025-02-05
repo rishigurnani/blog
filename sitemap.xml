@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/firstpost/</loc>
-		<lastmod>2018-05-01</lastmod>
-	</url>
-	
-	<url>
 		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/secondpost/</loc>
 		<lastmod>2018-07-04</lastmod>
 	</url>
@@ -19,6 +14,11 @@
 	<url>
 		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/fourthpost/</loc>
 		<lastmod>2018-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/firstpost/</loc>
+		<lastmod>2023-09-15</lastmod>
 	</url>
 	
 	<url>
