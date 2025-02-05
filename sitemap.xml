@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://rishigurnani.github.io/blog/blog/fourthpost/</loc>
-		<lastmod>2018-09-30</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://rishigurnani.github.io/blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/</loc>
 		<lastmod>2023-09-15</lastmod>
 	</url>
