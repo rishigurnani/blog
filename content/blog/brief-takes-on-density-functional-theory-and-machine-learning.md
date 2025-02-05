@@ -9,12 +9,6 @@ eleventyNavigation:
   order: 2
 ---
 
-[Skip to content](#content)
-
-[Rishi Gurnani's Website](https://rishigurnani.wordpress.com/)
-
-# Learning
-
 *Below are my brief takes on density functional theory and machine learning, accompanied by helpful resources.*
 
 My work leverages computational tools to study porous materials. These tools include **Density Functional Theory (DFT)** and **Machine Learning (ML)**. At a high level, DFT allows us to set up several quantum‐mechanical equations. By solving them, we can learn about the electronic properties of a set of atoms with an accuracy that matches experimental measurements. To learn more about DFT, check out [Rasoul Khaledialidusti](https://www.youtube.com/channel/UCPtZ0t9Fn2cVETnHqJECW2w)’s four-part [series](https://www.youtube.com/playlist?list=PLvZcfmZeLsvrq5kmsBcyFFIozKZR6mJ-s). A great complement to this series is a [set of lectures](https://www.youtube.com/playlist?list=PLT-GNiCGT-NRk1nD8fZqZcn0zuCEJ6E0_) by my PhD advisor, Dr. Ramprasad, on Electronic Structure Theory.
