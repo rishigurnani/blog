@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/firstpost/</loc>
+		<lastmod>2018-05-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/secondpost/</loc>
+		<lastmod>2018-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/thirdpost/</loc>
+		<lastmod>2018-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/fourthpost/</loc>
+		<lastmod>2018-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/about/</loc>
+		<lastmod>2025-02-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/blog/</loc>
+		<lastmod>2025-02-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/</loc>
+		<lastmod>2025-02-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/tags/</loc>
+		<lastmod>2025-02-05</lastmod>
+	</url>
+	
+	<url>
+		<loc>/https:/&amp;lt;your-github-username&amp;gt;.github.io/&amp;lt;your-repo&amp;gt;/feed/feed.xml</loc>
+		<lastmod>2025-02-05</lastmod>
+	</url>
+</urlset>
