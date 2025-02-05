@@ -1,11 +1,11 @@
 ---
-title: "Learning"
+title: "Beginner's Guide to DFT and ML"
 description: "Brief takes on density functional theory and machine learning."
 date: 2023-09-15
 tags: [learning, DFT, machine-learning]
 layout: layouts/post.njk
 eleventyNavigation:
-  key: "Learning"
+  key: "Beginner's Guide to DFT and ML"
   order: 2
 ---
 

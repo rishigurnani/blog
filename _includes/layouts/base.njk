@@ -40,17 +40,29 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
+		<a href="{{ '/' | url }}" class="home-link">{{ metadata.title }}</a>
+		<nav>
+			<h2 class="visually-hidden">Top level navigation menu</h2>
+			<ul class="nav">
+			<li class="nav-item">
+				<a href="{{ '/' | url }}"
+				{% if page.url == '/' %}aria-current="page"{% endif %}>
+				Home
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="{{ '/blog/' | url }}"
+				{% if page.url == '/blog/' %}aria-current="page"{% endif %}>
+				Archive
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://rishigurnani.github.io/site/" target="_blank" rel="noopener noreferrer">
+				About
+				</a>
+			</li>
+			</ul>
+		</nav>
 		</header>
 
 		<main id="skip">
@@ -60,7 +72,7 @@
 		</main>
 
 		<footer>
-			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
+			<p><em>© 2025 Rishi Gurnani. All rights reserved.</em></p>
 		</footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
