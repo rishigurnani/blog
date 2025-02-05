@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Learning</title>
 		<meta name="description" content="Brief takes on density functional theory and machine learning.">
-		<link rel="alternate" href="/eleventy-base-blog/feed/feed.xml" type="application/atom+xml" title="Dr. Rishi Gurnani — Research, Code, &amp; Ideas">
+		<link rel="alternate" href="/blog/feed/feed.xml" type="application/atom+xml" title="Dr. Rishi Gurnani — Research, Code, &amp; Ideas">
 		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -459,15 +459,15 @@ header {
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/eleventy-base-blog/" class="home-link">Dr. Rishi Gurnani — Research, Code, &amp; Ideas</a>
+			<a href="/blog/" class="home-link">Dr. Rishi Gurnani — Research, Code, &amp; Ideas</a>
 			<nav>
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/eleventy-base-blog/">Home</a></li>
-					<li class="nav-item"><a href="/eleventy-base-blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/" aria-current="page">Learning</a></li>
-					<li class="nav-item"><a href="/eleventy-base-blog/blog/">Archive</a></li>
-					<li class="nav-item"><a href="/eleventy-base-blog/about/">About</a></li>
-					<li class="nav-item"><a href="/eleventy-base-blog/feed/feed.xml">Feed</a></li>
+					<li class="nav-item"><a href="/blog/">Home</a></li>
+					<li class="nav-item"><a href="/blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/" aria-current="page">Learning</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/blog/about/">About</a></li>
+					<li class="nav-item"><a href="/blog/feed/feed.xml">Feed</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -479,9 +479,9 @@ header {
 
 <ul class="post-metadata">
 	<li><time datetime="2023-09-15">15 September 2023</time></li>
-	<li><a href="/eleventy-base-blog/tags/learning/" class="post-tag">learning</a>, </li>
-	<li><a href="/eleventy-base-blog/tags/dft/" class="post-tag">DFT</a>, </li>
-	<li><a href="/eleventy-base-blog/tags/machine-learning/" class="post-tag">machine-learning</a></li>
+	<li><a href="/blog/tags/learning/" class="post-tag">learning</a>, </li>
+	<li><a href="/blog/tags/dft/" class="post-tag">DFT</a>, </li>
+	<li><a href="/blog/tags/machine-learning/" class="post-tag">machine-learning</a></li>
 </ul>
 
 <p><a href="#content">Skip to content</a></p>
@@ -491,7 +491,7 @@ header {
 <p>My work leverages computational tools to study porous materials. These tools include <strong>Density Functional Theory (DFT)</strong> and <strong>Machine Learning (ML)</strong>. At a high level, DFT allows us to set up several quantum‐mechanical equations. By solving them, we can learn about the electronic properties of a set of atoms with an accuracy that matches experimental measurements. To learn more about DFT, check out <a href="https://www.youtube.com/channel/UCPtZ0t9Fn2cVETnHqJECW2w">Rasoul Khaledialidusti</a>’s four-part <a href="https://www.youtube.com/playlist?list=PLvZcfmZeLsvrq5kmsBcyFFIozKZR6mJ-s">series</a>. A great complement to this series is a <a href="https://www.youtube.com/playlist?list=PLT-GNiCGT-NRk1nD8fZqZcn0zuCEJ6E0_">set of lectures</a> by my PhD advisor, Dr. Ramprasad, on Electronic Structure Theory.</p>
 <p>In addition to the electronic properties, we sometimes wish to understand a material’s <strong>phononic properties</strong>—that is, the coordinated movement of its atoms. These are uncovered by obtaining the <em>Dynamical Matrix</em>. To learn more, I recommend this easy-to-digest <a href="https://www.neutron-sciences.org/articles/sfn/pdf/2011/01/sfn201112007.pdf">paper</a> by M.T. Dove. In short, the Dynamical Matrix reveals how displacing one atom affects the forces on the others. (G J Ackland also wrote a nice review of these methods, available <a href="https://iopscience.iop.org/article/10.1088/0953-8984/14/11/311/pdf">here</a>.)</p>
 <p>Although DFT is incredibly powerful, it can be slow for systems with many atoms. <strong>Machine Learning (ML)</strong> offers a speedy alternative. An incredible introduction to ML is available in Andrew Ng’s lecture series <a href="https://www.youtube.com/watch?v=PPLop4L2eGk&amp;list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN">here</a>. In simple terms, ML is a way to approximate <em>maps</em>—that is, a set of relationships between inputs and outputs. For example, consider the relationship between numbers and letters as shown in the diagram below:</p>
-<p><picture><source type="image/avif" srcset="/eleventy-base-blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/B6j746M0hu-240.avif 240w"><source type="image/webp" srcset="/eleventy-base-blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/B6j746M0hu-240.webp 240w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/B6j746M0hu-240.png" alt="" width="240" height="240"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/B6j746M0hu-240.avif 240w"><source type="image/webp" srcset="/blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/B6j746M0hu-240.webp 240w"><img loading="lazy" decoding="async" src="/blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/B6j746M0hu-240.png" alt="" width="240" height="240"></picture></p>
 <p>There are many flavors of ML algorithms, each uniquely using data to approximate the underlying map. Perhaps the most popular is the <em>neural network</em>. With just five minutes and a little Python knowledge, you can create your very own neural network using the Keras API. Check out <a href="https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/">this tutorial</a> for a quick start (remember to set up your environment first). While Keras is easy to get started with, more advanced networks (such as Variational Autoencoders) require a deeper dive. Stanford’s free <a href="http://web.stanford.edu/class/cs20si/syllabus.html">lectures</a> on TensorFlow are an excellent resource, and you can also view <a href="https://www.youtube.com/watch?v=TFWYoZoezrY">my lecture</a> on debugging neural networks.</p>
 <p>Another ML method I frequently use is <em>Gaussian Process Regression (GPR)</em>. A gentle introduction to GPR is available <a href="https://towardsdatascience.com/quick-start-to-gaussian-process-regression-36d838810319">here</a> (a basic understanding of probability notation helps).</p>
 <h3 id="share-this">Share this:</h3>
@@ -500,7 +500,7 @@ header {
 <li><a href="https://rishigurnani.wordpress.com/learning/?share=facebook" title="Click to share on Facebook">Facebook</a></li>
 </ul>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/eleventy-base-blog/blog/fourthpost/">This is my fourth post</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/blog/fourthpost/">This is my fourth post</a></li>
 </ul>
 
 			</heading-anchors>
@@ -510,7 +510,7 @@ header {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
 		</footer>
 
-		<!-- This page `/blog/brief-takes-on-density-functional-theory-and-machine-learning/` was built on 2025-02-05T21:05:20.015Z -->
-		<script type="module" src="/eleventy-base-blog/dist/xbxy_EL6cU.js"></script>
+		<!-- This page `/blog/brief-takes-on-density-functional-theory-and-machine-learning/` was built on 2025-02-05T21:12:04.386Z -->
+		<script type="module" src="/blog/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
