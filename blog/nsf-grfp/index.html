@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>2021 NSF GRFP Application: Lessons, Tips, and Resources</title>
+		<meta name="description" content="A personal blog showcasing my research, software, and professional journey.">
+		<link rel="alternate" href="/blog/feed/feed.xml" type="application/atom+xml" title="Dr. Rishi Gurnani — Research, Code, &amp; Ideas">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+		<a href="/blog/" class="home-link">Dr. Rishi Gurnani — Research, Code, &amp; Ideas</a>
+		<nav>
+			<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+			<ul class="nav">
+			<li class="nav-item">
+				<a href="/blog/">
+				Home
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="/blog/">
+				Archive
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://rishigurnani.github.io/site/" target="_blank" rel="noopener noreferrer">
+				About
+				</a>
+			</li>
+			</ul>
+		</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="2021-nsf-grfp-application-lessons-tips-and-resources">2021 NSF GRFP Application: Lessons, Tips, and Resources</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2021-09-04">04 September 2021</time></li>
+	<li><a href="/blog/tags/nsf-grfp/" class="post-tag">NSF GRFP</a>, </li>
+	<li><a href="/blog/tags/application-tips/" class="post-tag">Application Tips</a>, </li>
+	<li><a href="/blog/tags/graduate-research/" class="post-tag">Graduate Research</a>, </li>
+	<li><a href="/blog/tags/materials-science/" class="post-tag">Materials Science</a></li>
+</ul>
+
+<p><picture><source type="image/avif" srcset="/blog/blog/nsf-grfp/AfMMnQueim-6000.avif 6000w"><source type="image/webp" srcset="/blog/blog/nsf-grfp/AfMMnQueim-6000.webp 6000w"><img loading="lazy" decoding="async" src="/blog/blog/nsf-grfp/AfMMnQueim-6000.jpeg" alt="" width="6000" height="4000"></picture></p>
+<p>I applied to the 2021 National Science Foundation (NSF) Graduate Research Fellowship Program (GRFP) in the field of Materials Science. Although I did not win the fellowship, my application received positive reviews (4 “Excellent” and 2 “Very Good” ratings). I’m documenting my application process here in the hopes that it may be useful to future applicants.</p>
+<p><a href="https://rishigurnani.wordpress.com/wp-content/uploads/2021/06/rg_nsf_personal_statement-9.pdf">Personal Statement</a> • <a href="https://rishigurnani.wordpress.com/wp-content/uploads/2021/06/rg_nsf_research_statement-26.pdf">Research Statement</a> • <a href="https://rishigurnani.wordpress.com/wp-content/uploads/2021/06/final_reviews.pdf">Reviews</a></p>
+<hr>
+<h2 id="overview-of-the-nsf-grfp">Overview of the NSF GRFP</h2>
+<p>The <strong>NSF GRFP</strong> is an excellent way to kickstart a research career in STEM. Here are some of the key points about the program:</p>
+<ul>
+<li><strong>Funding:</strong> Provides $37,000 per year to the student for three years, plus additional funds to your department.</li>
+<li><strong>Flexibility:</strong> You may defer the fellowship for up to two years (if you have other funding), although you cannot defer solely to take a year off.</li>
+<li><strong>Eligibility:</strong>
+<ol>
+<li>Must be a U.S. Citizen, U.S. National, or permanent resident.</li>
+<li>Must be a graduating senior or a first/second year graduate student (graduate students can apply only once).</li>
+<li>Intended for those pursuing science research (not applicable to medical school).</li>
+</ol>
+</li>
+</ul>
+<p>For the most current eligibility details and deadlines (typically the last week of October), please refer to the official <a href="https://www.nsfgrfp.org">NSF GRFP website</a> and the detailed NSF presentation on the program’s requirements.</p>
+<hr>
+<h2 id="the-application-process">The Application Process</h2>
+<p>The application consists of several key components:</p>
+<ol>
+<li>
+<p><strong>Essays:</strong></p>
+<ul>
+<li><strong>Personal Statement, Relevant Background, and Future Goals Statement</strong> (up to 3 pages).<br>
+<em>This essay tells your story—how you got here and where you’re headed, including any unique personal or professional experiences that add to your diversity in STEM.</em></li>
+<li><strong>Graduate Research Plan Statement</strong> (up to 2 pages).<br>
+<em>This is a research proposal outlining an original project idea, your approach, and the potential scientific and societal impacts of your work.</em></li>
+</ul>
+</li>
+<li>
+<p><strong>Letters of Recommendation:</strong></p>
+<ul>
+<li>At least three letters are required. It is beneficial to have a mix of references who can address both your intellectual merit and broader impacts.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Review Criteria:</strong><br>
+Your essays are evaluated on two main criteria:</p>
+<ul>
+<li><strong>Intellectual Merit:</strong> Your potential to advance knowledge within your field.</li>
+<li><strong>Broader Impacts:</strong> How your work will benefit society and contribute to desired societal outcomes.</li>
+</ul>
+<p>Each essay should include clear, explicit headers for <em>Intellectual Merit</em> and <em>Broader Impacts</em>.</p>
+<hr>
+<h2 id="tips-and-resources-for-a-successful-application">Tips and Resources for a Successful Application</h2>
+<p>Below are some suggestions—many of which come from my own experience and from resources shared by previous NSF GRFP winners:</p>
+<h3 id="before-you-begin">Before You Begin</h3>
+<ul>
+<li><strong>Read the Official Guidelines:</strong><br>
+Thoroughly review the NSF GRFP Program Solicitation. Missing formatting guidelines can lead to desk-rejection.</li>
+<li><strong>Understand the Review Process:</strong><br>
+Familiarize yourself with the review criteria. Both essays must explicitly address Intellectual Merit and Broader Impacts.</li>
+</ul>
+<h3 id="getting-started">Getting Started</h3>
+<ul>
+<li>
+<p><strong>Essay Structure Suggestions:</strong></p>
+<p><strong>For the Personal, Relevant Background, and Future Goals Statement:</strong></p>
+<ul>
+<li><strong>Personal Background:</strong> (≈1 page) Share your journey into science and any personal challenges you overcame.</li>
+<li><strong>Relevant Background:</strong> (≈1 page) Detail your research experience, publications, presentations, and awards.</li>
+<li><strong>Future Goals:</strong> (≈½ page) Describe your vision for graduate school and beyond.</li>
+<li><strong>Explicit Sections for Review Criteria:</strong>
+<ul>
+<li><strong>Intellectual Merit:</strong> Summarize your scientific contributions.</li>
+<li><strong>Broader Impacts:</strong> Describe how your experiences and research have or will benefit society.</li>
+</ul>
+</li>
+</ul>
+<p><strong>For the Graduate Research Plan Statement:</strong></p>
+<ul>
+<li><strong>Introduction:</strong> Outline the scientific problem and its importance.</li>
+<li><strong>Research Plan:</strong> Describe your approach, creative strategies, and contingency plans.</li>
+<li><strong>Intellectual Merit:</strong> Explain how your project will advance knowledge.</li>
+<li><strong>Broader Impacts:</strong> Detail potential societal benefits and outreach plans.</li>
+<li><strong>Conclusion:</strong> Optionally summarize the overall impact of your project.</li>
+</ul>
+</li>
+</ul>
+<h3 id="practical-advice">Practical Advice</h3>
+<ul>
+<li><strong>Start Early and Seek Feedback:</strong><br>
+Ask for letters of recommendation early, and have your drafts reviewed by past fellowship winners or experienced professors.</li>
+<li><strong>Write for a General Science Audience:</strong><br>
+Assume the reviewer is knowledgeable in your primary field but not necessarily your specific subfield.</li>
+<li><strong>Use Visuals and Formatting:</strong><br>
+Don’t hesitate to include figures and bold key points (results, awards, contributions) to capture the reviewer’s attention.</li>
+<li><strong>Overcome Imposter Syndrome:</strong><br>
+Believe in your scientific value. Emphasize your achievements and unique perspective confidently.</li>
+</ul>
+<hr>
+<h2 id="my-personal-experience">My Personal Experience</h2>
+<p>In my application, I structured my essays into clear sections as described above. In the <strong>Personal, Relevant Background, and Future Goals Statement</strong>, I highlighted:</p>
+<ul>
+<li>How I got into computational research in Materials Science.</li>
+<li>Detailed descriptions of my research projects and the intellectual contributions of each.</li>
+<li>My outreach and teaching experiences that demonstrate broader impacts.</li>
+</ul>
+<p>For the <strong>Graduate Research Plan Statement</strong>, I focused on:</p>
+<ul>
+<li>Outlining a compelling research proposal.</li>
+<li>Emphasizing the novelty and transformative potential of my approach.</li>
+<li>Explicitly addressing both Intellectual Merit and Broader Impacts in separate, clearly labeled sections.</li>
+</ul>
+<p>These strategies, along with rigorous feedback and revising, contributed to the positive reviews I received—even though the final outcome wasn’t the fellowship.</p>
+<hr>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>The NSF GRFP is more than just funding—it’s a validation of your potential as a future research leader. Here are a few final pieces of advice:</p>
+<ul>
+<li><strong>Don’t Sell Yourself Short:</strong> Emphasize your achievements and potential.</li>
+<li><strong>Be Specific:</strong> Clearly detail how your work meets the two main review criteria.</li>
+<li><strong>Get Help:</strong> Use your department’s resources and ask for feedback from experienced mentors.</li>
+<li><strong>Stay Updated:</strong> This advice was last updated in September 2021; always check the latest guidelines and requirements from NSF.</li>
+</ul>
+<p>Good luck to all future applicants! Feel free to reach out with any questions or to share your own experiences.</p>
+<hr>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://www.nsfgrfp.org">Official NSF GRFP Program Solicitation</a></li>
+<li><a href="https://www.nsfgrfp.org/faq">NSF GRFP FAQ</a></li>
+<li><a href="https://www.thegradcafe.com/scholarships/nsf-grfp/">The GradCafe NSF GRFP Discussions</a></li>
+</ul>
+<hr>
+<p><em>I hope my experiences and these resources help demystify the application process and inspire you to put your best foot forward in your NSF GRFP application journey.</em></p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/blog/blt/">Confessions of a Researcher: How I Found Happiness, Time Efficiency, and Novelty through BLT</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/blog/Beginner&#39;s-Guide-to-DFT-and-ML/">Beginner&#39;s Guide to DFT and ML</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p><em>© 2025 Rishi Gurnani. All rights reserved.</em></p>
+		</footer>
+
+		<!-- This page `/blog/nsf-grfp/` was built on 2025-02-06T14:31:23.999Z -->
+		<script type="module" src="/blog/dist/xbxy_EL6cU.js"></script>
+	</body>
+</html>
