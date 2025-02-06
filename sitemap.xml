@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://rishigurnani.github.io/blog/blog/brief-takes-on-density-functional-theory-and-machine-learning/</loc>
+		<loc>https://rishigurnani.github.io/blog/blog/blt/</loc>
+		<lastmod>2020-09-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://rishigurnani.github.io/blog/blog/Beginner&amp;#39;s-Guide-to-DFT-and-ML/</loc>
 		<lastmod>2023-09-15</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rishigurnani.github.io/blog/about/</loc>
-		<lastmod>2025-02-05</lastmod>
+		<lastmod>2025-02-06</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rishigurnani.github.io/blog/blog/</loc>
-		<lastmod>2025-02-05</lastmod>
+		<lastmod>2025-02-06</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rishigurnani.github.io/blog/</loc>
-		<lastmod>2025-02-05</lastmod>
+		<lastmod>2025-02-06</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rishigurnani.github.io/blog/tags/</loc>
-		<lastmod>2025-02-05</lastmod>
+		<lastmod>2025-02-06</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://rishigurnani.github.io/blog/feed/feed.xml</loc>
-		<lastmod>2025-02-05</lastmod>
+		<lastmod>2025-02-06</lastmod>
 	</url>
 </urlset>
