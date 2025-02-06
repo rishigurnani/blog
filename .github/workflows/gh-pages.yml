@@ -40,6 +40,17 @@ jobs:
       - run: npm install
       - run: npm run build-ghpages
 
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Python Dependencies
+        run: pip install python-frontmatter python-dateutil
+
+      - name: Generate Latest Content JSON
+        run: python scripts/generate_latest_content.py
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
