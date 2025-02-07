@@ -271,6 +271,61 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+/* Hero Video Section */
+.hero-video {
+	position: relative;
+	width: 100%;
+	height: 30vh; /* Adjust the height as desired */
+	overflow: hidden;
+  }
+  
+  .video-background {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6); /* Darkens the video for better text contrast */
+  }
+  
+  .hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 1rem;
+  }
+  
+  /* Title takes the highest emphasis */
+  .hero-overlay h1 {
+	font-size: 2.5rem;
+	margin: 0;
+  }
+  
+  /* Description is secondary */
+  .hero-overlay .hero-description {
+	font-size: 1.25rem;
+	margin: 0.5rem 0;
+  }
+  
+  /* Author is least emphasized */
+  .hero-overlay .hero-author {
+	font-size: 1rem;
+	margin: 0.5rem 0;
+	font-weight: 400;
+	opacity: 0.8;
+  }
+
+/* Hide the anchor added by heading-anchors in the hero-author heading */
+.hero-author .anchor {
+	display: none;
 }</style>
 	</head>
 	<body>
@@ -332,7 +387,7 @@ header {
 			<p><em>© 2025 Rishi Gurnani. All rights reserved.</em></p>
 		</footer>
 
-		<!-- This page `/tags/materials-science/` was built on 2025-02-07T21:38:41.321Z -->
+		<!-- This page `/tags/materials-science/` was built on 2025-02-07T21:40:48.022Z -->
 		<script type="module" src="/blog/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
