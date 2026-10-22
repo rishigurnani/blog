@@ -1,5 +1,5 @@
 ---
-title: "2021 NSF GRFP Application: Lessons, Tips, and Resources"
+title: "NSF GRFP Application: Lessons, Tips, and Resources"
 date: 2021-09-04
 author: "Rishi Gurnani"
 tags:

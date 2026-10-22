@@ -6,6 +6,27 @@ const eleventyNavigation = {
 
 const numberOfLatestPostsToShow = 3;
 ---
+<!-- Hero Video Section -->
+<section class="hero-video">
+  <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline 
+    preload="auto" 
+    class="video-background"
+    src="https://videos.pexels.com/video-files/2759484/2759484-uhd_2560_1440_30fps.mp4">
+      <track kind="metadata" label="cuepoints" data-removeondestroy="">
+  </video>
+  <div class="hero-overlay">
+    <h1>{{ metadata.title }}</h1>
+    <p class="hero-description">{{ metadata.description }}</p>
+    <p id="" class="hero-author">by {{ metadata.author.name }}</p>
+  </div>
+</section>
+
+
+<!-- Latest Posts Section -->
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
@@ -18,12 +39,3 @@ const numberOfLatestPostsToShow = 3;
 {% if morePosts > 0 %}
 <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
 {% endif %}
-
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
