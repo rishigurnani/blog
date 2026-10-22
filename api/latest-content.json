@@ -1,15 +1,14 @@
 {
-  "title": "Beginner's Guide to DFT and ML",
-  "description": "Brief takes on density functional theory and machine learning.",
-  "date": "2023-09-15",
+  "title": "I Fell to My Lowest Point. One Email Helped Me Climb Out.",
+  "description": "How a single cold email to a professor turned nine rejections into a Ph.D. offer\u2014and three papers that each passed 100 citations.",
+  "date": "2026-10-22",
+  "author": "Rishi Gurnani",
+  "readingTime": "3 min read",
   "tags": [
-    "learning",
-    "DFT",
-    "machine-learning"
+    "graduate school",
+    "resilience",
+    "research",
+    "personal"
   ],
-  "layout": "layouts/post.njk",
-  "eleventyNavigation": {
-    "key": "Beginner's Guide to DFT and ML",
-    "order": 2
-  }
+  "layout": "layouts/post.njk"
 }

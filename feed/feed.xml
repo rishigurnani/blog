@@ -5,11 +5,28 @@
   <subtitle>This is a longer description about your blog.</subtitle>
   <link href="https://example.com/blog/feed/feed.xml" rel="self" />
   <link href="https://example.com/blog/" />
-  <updated>2023-09-15T00:00:00Z</updated>
+  <updated>2026-10-22T00:00:00Z</updated>
   <id>https://example.com/blog/</id>
   <author>
     <name>Your Name</name>
   </author>
+  <entry>
+    <title>I Fell to My Lowest Point. One Email Helped Me Climb Out.</title>
+    <link href="https://example.com/blog/blog/lowest-point/" />
+    <updated>2026-10-22T00:00:00Z</updated>
+    <id>https://example.com/blog/blog/lowest-point/</id>
+    <content type="html">&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/blog/blog/lowest-point/HLEi2J9Fkc-4000.avif 4000w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/blog/blog/lowest-point/HLEi2J9Fkc-4000.webp 4000w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/blog/blog/lowest-point/HLEi2J9Fkc-4000.jpeg&quot; alt=&quot;&quot; width=&quot;4000&quot; height=&quot;2252&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;All three of my final first-author papers from grad school have now passed 100 citations each, a milestone I owe to a lot of people who took a chance on me. Those papers almost never happened. Here’s my story.&lt;/p&gt;
+&lt;p&gt;It was May of 2019, and I was at an all time low. I stood in my parents’ driveway staring down my basketball hoop. I had made 13 of my last 19 free throws. One more make and I’d hit my goal. I hoisted the ball up aaaaand ... &lt;em&gt;Clang&lt;/em&gt;! Miss. For the past month, I had walked out to this same mark in the concrete with the same goal of making 14 of 20 free throws; I came up empty for the 30th straight time. I had set this goal to prove to myself that I was redeemable, that I was a &lt;em&gt;good-for-something&lt;/em&gt;. But, alas, it seemed I wasn’t.&lt;/p&gt;
+&lt;p&gt;Four months earlier, I had graduated from college with a 3.2 GPA, a low mark for someone hoping to get into a Ph.D. program. I&#39;d spent the past year telling myself I&#39;d never get in. I applied to ten schools anyway, some prestigious, some not, and moved back home to wait.&lt;/p&gt;
+&lt;p&gt;The rejections poured in, broken up by the occasional waitlist. One by one, the waitlists turned into rejections too, including the school where I&#39;d earned my bachelor&#39;s. The one that stung most came from a professor I&#39;d been corresponding with for a year. He messaged to ask if I&#39;d like to join his lab. I told him I&#39;d love to, but that the university hadn&#39;t admitted me, and asked if he could check on my status. I never heard from him again.&lt;/p&gt;
+&lt;p&gt;So there I was in the driveway: nine rejections, one waitlist I&#39;d been sitting on for four months, and a pretty good idea of how it would end (hint: poorly). I went inside and called my uncle, who&#39;d been through grad school in the &#39;90s. &amp;quot;Just email the professor you want to work with,&amp;quot; he said. &amp;quot;You have nothing to lose.&amp;quot;&lt;/p&gt;
+&lt;p&gt;So I did. I emailed Dr. Rampi Ramprasad at Georgia Tech. To my surprise, he emailed me back, asking if I was free for a call the next week. I told him I’d be in Atlanta anyway (I wasn’t—I booked a flight that night). The rest is history; he gave me the opportunity to join his lab as a Ph.D. student, an opportunity I’ll forever be thankful for.&lt;/p&gt;
+&lt;p&gt;I never did make 14 of 20; it turned out I didn’t need to.&lt;/p&gt;
+&lt;p&gt;That fall, on the morning of my first day, I stepped onto my balcony and squinted at the sun glinting off the Midtown skyscrapers. I sipped my coffee and said, to the city as much as to myself:&lt;/p&gt;
+&lt;p&gt;“This is my moment. It’s time to show the world they were wrong.”&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Beginner&#39;s Guide to DFT and ML</title>
     <link href="https://example.com/blog/blog/Beginner&amp;#39;s-Guide-to-DFT-and-ML/" />

@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>I Fell to My Lowest Point. One Email Helped Me Climb Out.</title>
+		<meta name="description" content="How a single cold email to a professor turned nine rejections into a Ph.D. offer—and three papers that each passed 100 citations.">
+		<link rel="alternate" href="/blog/feed/feed.xml" type="application/atom+xml" title="Tensor">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Hero Video Section */
+.hero-video {
+	position: relative;
+	width: 100%;
+	height: 30vh; /* Adjust the height as desired */
+	overflow: hidden;
+  }
+  
+  .video-background {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6); /* Darkens the video for better text contrast */
+  }
+  
+  .hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 1rem;
+  }
+  
+  /* Title takes the highest emphasis */
+  .hero-overlay h1 {
+	font-size: 2.5rem;
+	margin: 0;
+  }
+  
+  /* Description is secondary */
+  .hero-overlay .hero-description {
+	font-size: 1.25rem;
+	margin: 0.5rem 0;
+  }
+  
+  /* Author is least emphasized */
+  .hero-overlay .hero-author {
+	font-size: 1rem;
+	margin: 0.5rem 0;
+	font-weight: 400;
+	opacity: 0.8;
+  }
+
+/* Hide the anchor added by heading-anchors in the hero-author heading */
+.hero-author .anchor {
+	display: none;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+		<a href="/blog/" class="home-link">Tensor</a>
+		<nav>
+			<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+			<ul class="nav">
+			<li class="nav-item">
+				<a href="/blog/">
+				Home
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="/blog/">
+				Archive
+				</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://rishigurnani.github.io/site/" target="_blank" rel="noopener noreferrer">
+				About the author
+				</a>
+			</li>
+			</ul>
+		</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="i-fell-to-my-lowest-point-one-email-helped-me-climb-out">I Fell to My Lowest Point. One Email Helped Me Climb Out.</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2026-10-22">22 October 2026</time></li>
+	<li><a href="/blog/tags/graduate-school/" class="post-tag">graduate school</a>, </li>
+	<li><a href="/blog/tags/resilience/" class="post-tag">resilience</a>, </li>
+	<li><a href="/blog/tags/research/" class="post-tag">research</a>, </li>
+	<li><a href="/blog/tags/personal/" class="post-tag">personal</a></li>
+</ul>
+
+<p><picture><source type="image/avif" srcset="/blog/blog/lowest-point/HLEi2J9Fkc-4000.avif 4000w"><source type="image/webp" srcset="/blog/blog/lowest-point/HLEi2J9Fkc-4000.webp 4000w"><img loading="lazy" decoding="async" src="/blog/blog/lowest-point/HLEi2J9Fkc-4000.jpeg" alt="" width="4000" height="2252"></picture></p>
+<p>All three of my final first-author papers from grad school have now passed 100 citations each, a milestone I owe to a lot of people who took a chance on me. Those papers almost never happened. Here’s my story.</p>
+<p>It was May of 2019, and I was at an all time low. I stood in my parents’ driveway staring down my basketball hoop. I had made 13 of my last 19 free throws. One more make and I’d hit my goal. I hoisted the ball up aaaaand ... <em>Clang</em>! Miss. For the past month, I had walked out to this same mark in the concrete with the same goal of making 14 of 20 free throws; I came up empty for the 30th straight time. I had set this goal to prove to myself that I was redeemable, that I was a <em>good-for-something</em>. But, alas, it seemed I wasn’t.</p>
+<p>Four months earlier, I had graduated from college with a 3.2 GPA, a low mark for someone hoping to get into a Ph.D. program. I'd spent the past year telling myself I'd never get in. I applied to ten schools anyway, some prestigious, some not, and moved back home to wait.</p>
+<p>The rejections poured in, broken up by the occasional waitlist. One by one, the waitlists turned into rejections too, including the school where I'd earned my bachelor's. The one that stung most came from a professor I'd been corresponding with for a year. He messaged to ask if I'd like to join his lab. I told him I'd love to, but that the university hadn't admitted me, and asked if he could check on my status. I never heard from him again.</p>
+<p>So there I was in the driveway: nine rejections, one waitlist I'd been sitting on for four months, and a pretty good idea of how it would end (hint: poorly). I went inside and called my uncle, who'd been through grad school in the '90s. &quot;Just email the professor you want to work with,&quot; he said. &quot;You have nothing to lose.&quot;</p>
+<p>So I did. I emailed Dr. Rampi Ramprasad at Georgia Tech. To my surprise, he emailed me back, asking if I was free for a call the next week. I told him I’d be in Atlanta anyway (I wasn’t—I booked a flight that night). The rest is history; he gave me the opportunity to join his lab as a Ph.D. student, an opportunity I’ll forever be thankful for.</p>
+<p>I never did make 14 of 20; it turned out I didn’t need to.</p>
+<p>That fall, on the morning of my first day, I stepped onto my balcony and squinted at the sun glinting off the Midtown skyscrapers. I sipped my coffee and said, to the city as much as to myself:</p>
+<p>“This is my moment. It’s time to show the world they were wrong.”</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/blog/Beginner&#39;s-Guide-to-DFT-and-ML/">Beginner&#39;s Guide to DFT and ML</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p><em>© 2025 Rishi Gurnani. All rights reserved.</em></p>
+		</footer>
+
+		<!-- This page `/blog/lowest-point/` was built on 2026-10-22T10:27:25.085Z -->
+		<script type="module" src="/blog/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>
